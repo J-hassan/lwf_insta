@@ -2,7 +2,7 @@
 const Home = () => {
   return (
     <>
-      <section className="home">Hello World</section>
+      <section className="home">main content here</section>
     </>
   )
 }

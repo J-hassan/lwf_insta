@@ -64,6 +64,7 @@ export default function RootLayout({ children }) {
       <body className={`${workSans.variable} font-work-sans`}>
         <main className="app">
           <Sidebar />
+          <hr className="bg-white/20 h-screen w-[1px]" />
           <div className="home">
             {children}
           </div>
