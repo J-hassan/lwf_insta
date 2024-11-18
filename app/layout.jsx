@@ -61,10 +61,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${workSans.variable} font-work-sans`}>
+      <body className={`${workSans.variable} font-work-sans bg-black`}>
         <main className="app">
           <Sidebar />
-          <hr className="bg-white/20 h-screen w-[1px]" />
           <div className="home">
             {children}
           </div>
