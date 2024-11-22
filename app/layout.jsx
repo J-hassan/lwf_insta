@@ -1,6 +1,5 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Sidebar from "@/components/Sidebar";
 
 const workSans = localFont({
   src: [
@@ -54,20 +53,19 @@ const workSans = localFont({
 });
 
 export const metadata = {
-  title: "LWF Instagram",
-  description: "Connect with LWF community",
+  title: "Promptopia - Get your prompt ready",
+  description:
+    "Promptia is a tool that helps you get your prompt ready for your AI",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${workSans.variable} font-work-sans bg-black`}>
-        <main className="app">
-          <Sidebar />
-          <div className="home">
-            {children}
-          </div>
-        </main>
+      <body className={`${workSans.variable} font-work-sans`}>
+        <div className="main">
+          <div className="gradient"></div>
+        </div>
+        <div className="app">{children}</div>
       </body>
     </html>
   );
